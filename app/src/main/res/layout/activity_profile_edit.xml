@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile_edit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.esieben_sizebook.profileEditActivity">
+
+    <TextView
+        android:id="@+id/editTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/editProfile"/>
+
+    <TextView
+        android:id="@+id/nameField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTitle"
+        android:text="@string/nameField"/>
+
+    <EditText
+        android:id="@+id/nameEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameField"/>
+
+    <TextView
+        android:id="@+id/dateField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameEdit"
+        android:text="@string/dateField"/>
+
+    <LinearLayout
+        android:id="@+id/dateEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/dateField"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/yearEdit"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/yearHint"
+            android:maxLength="4"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/monthEdit"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/monthHint"
+            android:maxLength="2"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/dayEdit"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/dayHint"
+            android:maxLength="2"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/dateEdit"
+        android:gravity="center_horizontal"
+        android:padding="15dp">
+        <TextView
+            android:id="@+id/neckField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/neckField"
+            android:gravity="left" />
+
+        <EditText
+            android:id="@+id/neckEdit"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:maxLength="4"/>
+
+        <TextView
+            android:id="@+id/bustField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bustField"/>
+
+        <EditText
+            android:id="@+id/bustEdit"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:maxLength="4"/>
+
+        <TextView
+            android:id="@+id/chestField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chestField"/>
+
+        <EditText
+            android:id="@+id/chestEdit"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:maxLength="4"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/row1"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/waistField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/waistField"/>
+
+        <EditText
+            android:id="@+id/waistEdit"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:maxLength="4"/>
+
+        <TextView
+            android:id="@+id/hipField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hipField"/>
+
+        <EditText
+            android:id="@+id/hipEdit"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:maxLength="4"/>
+
+        <TextView
+            android:id="@+id/inseamField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inseamField"/>
+
+        <EditText
+            android:id="@+id/inseamEdit"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:maxLength="4"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/commentField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/row2"
+        android:text="@string/commentField"/>
+
+    <EditText
+        android:id="@+id/commentEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/commentField"/>
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/commentEdit"
+        android:text="@string/deleteProfile"
+        android:onClick="deleteProfile"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/deleteButton"
+        android:text="@string/saveChanges"
+        android:onClick="saveProfile"/>
+
+</RelativeLayout>

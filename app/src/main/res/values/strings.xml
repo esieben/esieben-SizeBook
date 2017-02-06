@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">esieben-SizeBook</string>
+    <string name="createNew">Create New Profile</string>
+    <string name="nameHint">Erick</string>
+    <string name="createNewProfile">Create New Profile</string>
+    <string name="nameText">Enter a name for the new profile</string>
+    <string name="clear">Clear all profiles</string>
+    <string name="createProfile">Create Profile</string>
+    <string name="editProfile">Edit Profile</string>
+    <string name="nameField">Name</string>
+    <string name="neckField">Neck</string>
+    <string name="bustField">Bust</string>
+    <string name="chestField">Chest</string>
+    <string name="waistField">Waist</string>
+    <string name="hipField">Hip</string>
+    <string name="inseamField">Inseam</string>
+    <string name="commentField">Additional Comments</string>
+    <string name="dateField">Date</string>
+    <string name="yearHint">YYYY</string>
+    <string name="monthHint">MM</string>
+    <string name="dayHint">DD</string>
+    <string name="saveChanges">Save Changes</string>
+    <string name="deleteProfile">Delete Profile</string>
+</resources>

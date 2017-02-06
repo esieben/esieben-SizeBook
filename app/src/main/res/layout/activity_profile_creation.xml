@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--solution for multiple fields on same line adapted from
+ http://stackoverflow.com/questions/4637379/edittext-and-button-on-the-same-line-with-textview-underneath
+ and
+ https://developer.android.com/training/basics/firstapp/building-ui.html
+ both viewed on 02.02.17-->
+<!--learned how to add xml comments from
+http://stackoverflow.com/questions/3484643/comments-in-android-layout-xml
+viewed on 02.02.17-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile_creation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.esieben_sizebook.profileCreationActivity">
+
+    <TextView
+        android:id="@+id/newProfileTitle"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/createNewProfile"/>
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:text="@string/nameText"/>
+
+    <EditText
+        android:id="@+id/nameField"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nameHint"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/createButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/createProfile"
+        android:onClick="submitProfile"
+        />
+
+</LinearLayout>
